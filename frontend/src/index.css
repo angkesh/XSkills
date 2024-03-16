@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base{
+    :root {
+        --background-color: #fafafa;
+        --design-color:  #21B4C8; /*#01959a #9a0192*/
+        --img-border-color: rgb(3, 2, 1);
+        --lightText-color: #111827;
+        --color-1: #e5e7eb;
+        --color-2: #000000;  /*navbar-text edu-card-univ*/
+        --color-3: #000000;  /*shadow-4 */
+        --color-4: #000000; /*shadow-5 */
+        --color-5: #0201019e;
+        --color-6: rgb(98, 96, 96); /*banner image bg*/
+        --color-7: #d3d0d4; /*banner image bg*/
+        --color-8: #23272b; /*success message*/
+        --color-9: #a3a9b0;
+        --color-10: #244ea3;
+        --color-11: #fafafa;
+        --color-12: rgba(17, 15, 15, 0.349); /*black with opacity replacement*/
+        --color-13: #0d0d0d80; /*black with opacity replacement*/
+        --color-14: #cbd5e1; /*contact input*/
+        --color-15: #1e293b; /*theme*/
+        --color-16: #ffffff; /*gradient color*/
+        --color-17: #e5e5e5b0; /*gradient color*/
+        --color-18: #64075b9e;
+        --color-19: #030f7539; /*black with opacity replacement*/
+        --color-20: #0000006a; /*black with opacity replacement*/
+        --color-21: #ffffff;
+        --color-22: #01959a;
+        --color-23: #18012a;
+        --color-24: #036aa197;
+        --color-25: #4c94c1; 
+        --color-26: #6b6868 ;/*line color in certificate detail*/
+        --color-27: #173061; /*border color in certifiate detail*/ 
+        --color-28: rgb(47, 93, 149); /*bgcolor in certificate detail*/
+        --box-bg-color: linear-gradient(145deg, #1e2024, #23272b);
+        --close-button-color: #56585b;
+        --popup-color: #d2cfcf;
+        --shadow-color-1: #d1d5db;
+        --shadow-color-2: #66696f;
+        --shadow-color-3: rgba(0, 0, 0, 25);
+        --shadow-color-4: rgba(0, 0, 0, 25);
+        --edu-icon-bg-color: white; 
+        --img-prev-next-color: #111827;
+
+        --color-29: #CD20DD; /* banner text gradient */
+        --color-30: #2EA1B1; /* banner text gradient */
+        --color-31: #098697; /* logo */
+        --color-32: #21B4C8; /* logo */
+        --color-33: #21B4C8; /* subject box */
+        --color-34: #CD20DD; /* xskills gradient */
+        --color-35: #2EA1B1; /* xskills gradient */
+        --color-36: #E82D5A; /* xskills gradient */
+        --color-37: #FFFFFF; /* navbar */
+        --color-38: #000000; /* navbar text color */
+        --search-box-color: #F3F2F2;
+        --play-color: #F79A57;
+        --text-color: #ffffff; /* text color inside boxes */
+        
+    }
+
+    .theme-blue{
+        --background-color: var(--color-16);
+        --design-color:  #B12E7C;
+        --img-border-color: rgb(10, 60, 113);
+        --lightText-color: #c4cfde;
+        --color-1: #e5e7eb;
+        --color-2: #9ca3af;
+        --color-3:#4b5563;
+        --color-4: #000000;
+        --color-5: #ffffff;
+        --color-6: #05080e; /*banner image bg*/
+        --color-7: #062c5d; /*banner image bg*/
+        --color-8: #23272b; /*success message*/
+        --color-9: #0c1739;
+        --color-10: #f3f4f6;
+        --color-11: #111827;
+        --color-12: #00000031; /*black with opacity replacement*/
+        --color-13: #0000006a; /*black with opacity replacement*/
+        --color-14: #031228; /*contact input*/
+        --color-15: #1e293b; /*theme*/
+        --color-16: #0c567e; /*gradient color*/
+        --color-17: #113b52; /*gradient color*/
+        --color-18: #3b0764;
+        --color-19: #030f7539; /*black with opacity replacement*/
+        --color-20: #0000006a; /*black with opacity replacement*/
+        --color-21: #ffffff;
+        --color-22: #01959a;
+        --color-23: #3b0764;
+        --color-24: #dadc61;
+        --color-25: var(--color-5);
+        --color-26: #404040 ;/*line color in certificate detail*/
+        --color-27: #6b7280; /*border color in certifiate detail*/ 
+        --color-28: var(--background-color); /*bgcolor in certificate detail*/
+        --box-bg-color: linear-gradient(145deg, #1e2024, #23272b);
+        --close-button-color: #08357e;
+        --popup-color: #0e122f;
+        --shadow-color-1: var(--color-11);
+        --shadow-color-2: #124763;
+        --shadow-color-3: var(--color-11);
+        --shadow-color-4: var(--color-17);
+        --edu-icon-bg-color: white; 
+        --img-prev-next-color: #9ca3af;
+
+        --color-29: #278BD4; /* banner text gradient */
+        --color-30: #278BD4; /* banner text gradient */
+        --color-31: #278BD4; /* logo */
+        --color-32: #0B5489; /* logo */
+        --color-33: #278BD4; /* subject box */
+        --color-34: #CD20DD; /* xskills gradient */
+        --color-35: #2EA1B1; /* xskills gradient */
+        --color-36: #E82D5A; /* xskills gradient */
+        --color-37: #FFFFFF; /* navbar */
+        --color-38: #000000; /* navbar text color */
+        --search-box-color: #FFFFFF;
+        --play-color: #F79A57;
+        --text-color: #ffffff; /* text color inside boxes */
+    }
+
+    .theme-dark{
+        --background-color: #212428;
+        --design-color:  #1E90FF;
+        --img-border-color: #475569;
+        --lightText-color: #c4cfde;
+        --color-1: #e5e7eb; /*gray-200*/
+        --color-2: #9ca3af; /*gray-400*/
+        --color-3:#4b5563;  /*gray-600*/
+        --color-4: #000000; /*black*/
+        --color-5: #ffffff; /*white*/
+        --color-6: #1e2024; /*banner image bg*/
+        --color-7: #202327; /*banner image bg*/
+        --color-8: #23272b; /*success message*/
+        --color-9: #141518;
+        --color-10: #f3f4f6;
+        --color-11: #111827;
+        --color-12: #00000031; /*black with opacity replacement*/
+        --color-13: #0000006a; /*black with opacity replacement*/
+        --color-14: #191b1e; /*contact input*/
+        --color-15: #1e293b; /*theme*/
+        --color-16: #0369a1;
+        --color-17: var(--background-color);
+        --color-18: #111827;
+        --color-19: #00000031; /*black with opacity replacement*/
+        --color-20: #0000006a; /*black with opacity replacement*/
+        --color-21: #ffffff;   /*only used in light*/
+        --color-22: #01959a;   /*only used in light*/
+        --color-23: #3b0764;   /*only used in light*/
+        --color-24: #65abf0;   /*about icon hover*/
+        --color-25: var(--color-5);
+        --color-26: #404040 ;/*line color in certificate detail*/
+        --color-27: #6b7280; /*border color in certifiate detail*/ 
+        --color-28: var(--background-color); /*bgcolor in certificate detail*/
+        --bg-color-black: #000000;
+        --box-bg-color: linear-gradient(145deg, #1e2024, #23272b);
+        --close-button-color: #425778;
+        --popup-color: #171718;
+        --shadow-color-1: #1c1e22;
+        --shadow-color-2: #262a2e;
+        --shadow-color-3: rgba(0, 0, 0, 25);
+        --shadow-color-4: rgba(0, 0, 0, 25);
+        --edu-icon-bg-color: white; 
+        --img-prev-next-color: #9ca3af;
+
+        --color-29: #278BD4; /* banner text gradient */
+        --color-30: #278BD4; /* banner text gradient */
+        --color-31: #278BD4; /* logo */
+        --color-32: #0B5489; /* logo */
+        --color-33: #278BD4; /* subject box */
+        --color-34: #CD20DD; /* xskills gradient */
+        --color-35: #2EA1B1; /* xskills gradient */
+        --color-36: #E82D5A; /* xskills gradient */
+        --color-37: #FFFFFF; /* navbar */
+        --color-38: #000000; /* navbar text color */
+        --search-box-color: #FFFFFF;
+        --play-color: #F79A57;
+        --text-color: #ffffff; /* text color inside boxes */
+    }
+
+    
+}
+
+
+
+@layer components {
+
+    .navbar{
+        @apply w-[85%] h-20 sticky top-[30px] pl-5 pr-5 pt-3 pb-3 z-[99] mx-auto
+        flex justify-between items-center font-titleFont rounded-[43px] shadow-shadowFour bg-color37
+    }
+    .bannerIcon{
+        @apply w-16 h-16 text-color1 text-xl inline-flex
+        items-center justify-center rounded-2xl shadow-shadowOne hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer
+        duration-300;
+    }
+
+    .aboutIcon{
+        @apply w-10 h-10 bg-designColor text-color1 text-xl inline-flex
+        items-center justify-center rounded-full hover:scale-105 hover:bg-color25  transition-all cursor-pointer
+        duration-300;
+    }
+
+    .projectIcon{
+        @apply w-12 h-12 mb-[20px] text-color1 text-xl inline-flex 
+        items-center justify-center rounded-2xl hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer
+        duration-300;
+    }
+
+    .projectDetailIcon{
+        @apply w-12 h-12 mb-[20px] text-color1 text-xl inline-flex
+        items-center justify-center rounded-2xl shadow-shadowThree hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer
+        duration-300;
+    }
+
+    .courseIcon{
+        @apply w-12 h-12 mb-[20px] text-color1 text-xl inline-flex 
+        items-center justify-center rounded-2xl shadow-shadowThree hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer
+        duration-300;
+    }
+
+    .experienceLi {
+        @apply w-full h-20 bg-color12 text-xl text-gray-300 flex 
+        justify-center cursor-pointer hover:bg-color13 duration-300 items-center
+        border-[1px] rounded-none;
+    };
+
+    .bgOpacity {
+        @apply bg-color13;
+    }
+
+    .projectPopup{
+        @apply h-[100%] w-full lg:w-[50%] top-0 left-0
+            fixed bg-popupColor flex flex-col gap-6 items-center justify-between
+            overflow-y-scroll overflow-x-hidden pt-[20px] pr-[10px] shadow-shadowTwo z-[9999]
+    }
+
+    .coursesPopup{
+        @apply h-[100%] w-full lg:w-[50%] top-0 left-0
+        fixed bg-popupColor flex flex-col gap-6 items-center justify-between
+        overflow-y-scroll overflow-x-hidden pt-[20px] pr-[10px] shadow-shadowTwo z-[9999]
+    }
+
+    .certificatePopup{
+        @apply h-[100%] w-full lg:w-[50%] top-0 left-0
+            fixed bg-popupColor flex flex-col gap-6 items-center justify-between
+            overflow-y-scroll overflow-x-hidden pt-[20px] shadow-shadowTwo z-[9999]
+    }
+
+    
+
+    .closeBack{
+        @apply rounded-full flex justify-end
+        text-base font-normal text-closeColor tracking-wide cursor-pointer hover:text-designColor duration-300
+    }
+
+    .closeButton{
+        @apply w-[110%] py-[15px] flex items-center gap-3 justify-center bg-closeColor text-base 
+        font-normal text-white tracking-wide cursor-pointer hover:text-designColor duration-300 
+    }
+
+    .contactInput {
+        @apply w-full h-12 rounded-lg border-b-[1px] border-b-color3 bg-color14 text-lightText px-4 active:outline-none
+        focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
+    }
+
+    .contactTextArea{
+        @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-color14 text-lightText px-4 py-3 active:outline-none
+         focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
+    }
+
+    .footerIcon{
+        @apply w-12 h-12 bg-color12 text-color1 text-xl inline-flex
+        items-center justify-center rounded-2xl shadow-shadowOne hover:bg-color13  hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer
+        duration-300;
+    }
+
+    .themeBar{
+        @apply flex flex-row justify-center items-center w-auto 
+        h-auto bg-slate-400 text-3xl fixed top-[30%] right-0 py-3 px-6 gap-6 rounded-full z-10
+    }
+
+
+    .themeOptions{
+        @apply inline-block h-[20px] w-[20px] border-solid border-[20px] 
+        rounded-full rotate-45 hover:scale-110 transition-all duration-300 cursor-pointer
+    }
+
+    .eduCard{
+        @apply w-full bg-color12 hover:bg-color13 duration-300 
+               rounded-lg p-4 lgl:px-10 flex flex-col justify-center gap-6 lgl:gap-10 shadow-shadowOne
+    }
+    .bgEduCard {
+        @apply w-full duration-300 
+        rounded-lg p-4 lgl:px-10 flex flex-col justify-center gap-6 lgl:gap-10 shadow-shadowOne
+    }
+
+    /* .bgGradientBlue{
+        @apply bg-gradient-to-tr from-color11 from-30% via-color17 via-80% to-color16 to-[160%] transition-colors
+    } */
+
+    .bgEduGradientBlue{
+        @apply bg-gradient-to-tl from-color11 from-30% via-color17 via-80% to-color16 to-[100%] transition-colors
+        hover:bg-gradient-to-bl hover:from-color11 hover:from-30% hover:to-color18
+    }
+
+
+    .projectCard {
+        @apply w-full p-4 xl:px-12 xl:py-10 h-auto  rounded-lg shadow-shadowOne flex flex-col
+         transition-colors duration-1000 cursor-pointer
+    }
+
+    .certificateCard{
+        @apply rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col gap-6 cursor-pointer
+    }
+
+    .bgProjectGradient{
+        @apply bg-gradient-to-r from-bodyColor to-popupColor hover:bg-gradient-to-br
+        hover:from-color17 hover:from-50% hover:to-color18 transition-colors duration-1000 cursor-pointer
+    }
+
+  
+
+    .bgProjectLight {
+        @apply bg-gradient-to-br from-gray-200 via-gray-400 to-gray-300
+        hover:bg-gradient-to-tr hover:from-color18 hover:from-0% hover:via-color24 
+        hover:via-50% hover:to-color17 hover:to-70% transition-colors duration-1000 cursor-pointer
+    }
+    
+    .bgEduLight {
+        @apply bg-gradient-to-bl from-gray-50 via-gray-100 to-gray-200
+        hover:bg-gradient-to-tr hover:from-color18 hover:from-0% hover:via-color24 
+        hover:via-50% hover:to-color17 hover:to-70% transition-colors duration-1000 cursor-pointer
+    }
+
+
+    .footerIconLight{
+        @apply w-12 h-12 text-color1 text-xl inline-flex
+        items-center justify-center rounded-2xl shadow-shadowOne hover:bg-color13  hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer
+        duration-300;
+    }
+    
+    .viewCertificate{
+       @apply  h-10 text-center text-[12px] p-[8px] rounded-[10px] text-lightText
+               hover:scale-110 hover:text-designColor transition-all duration-300 shadow-shadowThree
+    }
+
+    .logo-bg{
+        @apply w-[70px] h-[70px] flex items-center justify-center border-solid border-[3px] rounded-full bg-gradient-to-l from-color31 to-color32
+    }
+
+    .text-gradient {
+        @apply bg-gradient-to-r from-color29 to-color30 bg-clip-text bg-transparent
+    }
+
+}
+
+.active {
+    color: var(--color-5);
+}
+
+.scrollbar-hide::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.bgGradientLight{
+    background-image: linear-gradient(to bottom right, #ffffff, #e5e7eb, #9ca3af, #6b7280, #4b5563);  
+    background-image: linear-gradient(to bottom right, #ffffff 0%, #e5e7eb 30%, #9ca3af 50%, #6b7280 70%, #4b5563 90%);  
+}
+
+
+.bgElementGradientLight{
+    background-color: #170d24;
+    background-image:
+    radial-gradient(ellipse at 10% 90%, #3c2d83 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 90%, #c33c65 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 10%, #4a74dc 0%, transparent 55%),
+    radial-gradient(ellipse at 10% 10%, #34244f 0%, transparent 55%);
+}   
+
+
+
+
+
+.bgGradientMain{
+    background-color: #FFFFFF;
+    background-image: radial-gradient(farthest-corner at 1500px 1px, #FFF8F8 10%, #FCE6EB 20%, #C6F4FA 40%, #FFFFFF 60%)
+}   
+
+
+.bgNavGradientMix{
+    background-image: linear-gradient(to right, #2d1d8a, #983251fd);
+}
+
+.xskillsGradient{
+    background-image: linear-gradient(to right, var(--color-34), var(--color-35), var(--color-36));
+    background-image: linear-gradient(to right, var(--color-34) 0%, var(--color-35) 50%, var(--color-36) 80%);
+    background-clip: text;
+    color: transparent;
+}
+
+.bgGradientBlue {
+    background-image: linear-gradient(to top left, #2777D4, #1A6FAC, #2674AD, #165D91, #0B5489, #093A5E, #031D30);  
+    background-image: linear-gradient(to top left, #2777D4 0%, #1A6FAC 20%, #2674AD 30%, #165D91 40%, #0B5489 50%, #093A5E 60%, #031D30 80%);  
+}
